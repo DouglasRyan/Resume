@@ -1,60 +1,60 @@
 particlesJS("particles-js", {
-  "particles": {
-    "number": {
+  "particles": {      //粒子
+    "number": {     //数量
       "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
-    "color": {
-      "value": "#ffffff"
+    "color": {        //颜色
+      "value": "#66ff99"    //节点颜色
     },
-    "shape": {
-      "type": "edge",
+    "shape": {        //形状
+      "type": "polygon",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 2,
+        "color": "#69f"   //节点边框颜色
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
-        "width": 100,
-        "height": 100
+        "width": 50,
+        "height": 50
       }
     },
-    "opacity": {
+    "opacity": {      //透明度
       "value": 0.5,
-      "random": false,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0.6,
         "sync": false
       }
     },
-    "size": {
+    "size": {       //大小
       "value": 3,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
+        "speed": 50,
         "size_min": 0.1,
         "sync": false
       }
     },
-    "line_linked": {
+    "line_linked": {        //连接线
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "color": "#abcdef",  //线条颜色
+      "opacity": 0.3,
+      "width": 2
     },
-    "move": {
+    "move": {         //移动设置
       "enable": true,
-      "speed": 6,
+      "speed": 8,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -67,12 +67,12 @@ particlesJS("particles-js", {
       }
     }
   },
-  "interactivity": {
+  "interactivity": {        //互动
     "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
@@ -95,7 +95,7 @@ particlesJS("particles-js", {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 100,
         "duration": 0.4
       },
       "push": {
@@ -106,22 +106,5 @@ particlesJS("particles-js", {
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false    //视觉效果
 });
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);;
