@@ -13,7 +13,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height:110vw;
+  height:200vh;
   background-color: #cafedb;
   background-image: url("");
   background-repeat: no-repeat;

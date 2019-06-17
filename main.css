@@ -86,7 +86,17 @@ main {
   main .detail {
     padding-left: 30px;
     border-left: 2px solid #bbb; }
-    main .detail .project h2 {
-      color: #6666ff; }
-    main .detail .project h3 {
-      color: #4a5a6a; }
+    main .detail .project {
+      color: #1a2a3a; }
+      main .detail .project h2 {
+        color: #69f; }
+      main .detail .project h3 {
+        color: #4a5a6a;
+        font-weight: bold; }
+      main .detail .project p {
+        line-height: 20px; }
+      main .detail .project .boldTitle {
+        font-weight: bold; }
+      main .detail .project .highLight {
+        color: #f66;
+        background: #bbb; }

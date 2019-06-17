@@ -114,11 +114,23 @@ main {
         padding-left: 30px;
         border-left: 2px solid #bbb;
         .project {
+            color:#1a2a3a;
             h2 {
-                color: #6666ff;
+                color: #69f;
             }
             h3 {
                 color: #4a5a6a;
+                font-weight: bold;
+            }
+            p{
+                line-height: 20px;
+            }
+            .boldTitle{
+                font-weight: bold;
+            }
+            .highLight{
+                color: #f66;
+                background:#bbb;
             }
         }
     }
