@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link class="p" rel="stylesheet" href="./vendar/particle/particle.css">
+    <link rel="stylesheet" href="./vendar/particle/particle.css">
     <link rel="stylesheet" href="main.css">
     <script src="//at.alicdn.com/t/font_1225402_gmvztuj0tvi.js"></script>
     <title>我的简历</title>
     <style media="print">
+        body {
+            background: #fff;
+        }
+
         .container {
             display: none;
         }
@@ -17,6 +21,8 @@
         .resumeContainer {
             width: 100vw;
             margin: 0;
+            border-left: 1px solid #6a7a8a;
+            border-right: 1px solid #6a7a8a;
         }
 
         .img-container {
@@ -123,8 +129,8 @@
                         </div>
                         <div class="text">
                             <p> <span class="boldTitle">项目介绍</span>：该项目使用 React
-                                实现了一个移动端的日历页面。实现了切换年、月、日，添加备注事项，公历转换农历等功能。项目使用 React框架构建。</p>
-                            <p> <span class="boldTitle">技术栈</span>：React/ ES6/ jQuery</p>
+                                实现了一个移动端的日历页面。实现了<span class="highLight">切换年、月、日</span>功能。项目使用 React框架构建。</p>
+                            <p> <span class="boldTitle">技术栈</span>：React/ ES6</p>
                             <p> <span class="boldTitle">项目源码</span>：<a
                                     href="https://github.com/DouglasRyan/ReactCalendar"
                                     target="_blank">github.com/Douglasryan/ReactCalendar</a>
@@ -139,15 +145,14 @@
                             <img src="https://dwz.cn/5TEf1Y8i" alt="Loop">
                         </div>
                         <div class="text">
-                            <p><span class="boldTitle">项目介绍</span>：该项目使用原生js实现图片<span class="highLight">轮播</span> 。
+                            <p><span class="boldTitle">项目介绍</span>：该项目使用jQuery实现图片<span class="highLight">轮播</span> 。
                             </p>
-                            <p> <span class="boldTitle">技术栈</span>：原生js</p>
-                            <p> <span class="boldTitle">项目源码</span>：<a
-                                    href="http://https://github.com/DouglasRyan/MyBook/tree/master/Carousel"
-                                    target="_blank">https://github.com/DouglasRyan/MyBook/tree/master/Carousel</a>
+                            <p> <span class="boldTitle">技术栈</span>：jQuery</p>
+                            <p> <span class="boldTitle">项目源码</span>：<a href="https://github.com/DouglasRyan/Carousel"
+                                    target="_blank">github.com/DouglasRyan/Carousel</a>
                             </p>
-                            <p> <span class="boldTitle">浏览链接</span>：<a href="https://lotu.xyz/MyBook/Carousel/Carousel/"
-                                    target="_blank">https://lotu.xyz/MyBook/Carousel/Carousel/</a>
+                            <p> <span class="boldTitle">浏览链接</span>：<a href="https://lotu.xyz/Carousel/"
+                                    target="_blank">lotu.xyz/Carousel/</a>
                             </p>
                         </div>
                     </article>
@@ -188,7 +193,7 @@
         <footer></footer>
     </div>
     <script src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
-    <script id="particle" src="./vendar/particle/particle.js"></script>
+    <script src="./vendar/particle/particle.js"></script>
 </body>
 
 </html>
