@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./vendar/particle/particle.css">
+    <link class="p" rel="stylesheet" href="./vendar/particle/particle.css">
     <link rel="stylesheet" href="main.css">
-    <script src="//at.alicdn.com/t/font_1225402_0p1dvkbn7lbb.js"></script>
+    <script src="//at.alicdn.com/t/font_1225402_gmvztuj0tvi.js"></script>
     <title>我的简历</title>
+    <style media="print">
+        .container canvas{
+            display: none;
+        }
+        .resumenContainer {
+            width: 100vw;
+            margin: 0;
+        }
+        .img-container{
+            display: none;
+        }
+        
+    </style>
 </head>
 
 <body>
     <div id="particles-js" class="container">
-        <div class="resumenContainer">
+        <div class="resumeContainer">
             <header>
                 <h1>钟合化</h1>
                 <p> <span>应聘Web前端开发</span> </p>
@@ -24,9 +37,9 @@
                         <img src="https://dwz.cn/9uqJQVHe" alt="avatar">
                     </div>
                     <div class="mess">
-                            <h1>钟合化</h1>
-                            <p>应聘Web前端开发</p>
-                        </div>
+                        <h1>钟合化</h1>
+                        <p>应聘Web前端开发</p>
+                    </div>
                     <div class="baseMess">
                         <h3 class="personalNav">
                             基本信息
@@ -64,14 +77,33 @@
                         <span>React</span>
                         <progress value="50" max="100"></progress>
                     </div>
-                    <div class="habit">
+                    <div class="habits">
                         <h3 class="personalNav">
                             兴趣爱好
                         </h3>
-                        <span>电影</span>
-                        <span>阅读</span>
-                        <span>旅游</span>
-                        <span>户外运动</span>
+                        <div class="habitContainer">
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#icon-dy"></use>
+                                </svg>&nbsp&nbsp&nbsp电影
+                            </span>
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#icon-yd"></use>
+                                </svg>&nbsp&nbsp&nbsp阅读
+                            </span>
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#icon-ly"></use>
+                                </svg>&nbsp&nbsp&nbsp旅游
+                            </span>
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#icon-yd"></use>
+                                </svg>&nbsp&nbsp&nbsp运动
+                            </span>
+                        </div>
+
                     </div>
                 </aside>
                 <div class="detail">
@@ -81,7 +113,7 @@
                             <hr />
                         </h2>
                         <article>
-                            <h3>移动端手机日历</h3>
+                            <h3>一、移动端手机日历</h3>
                             <div class="img-container">
                                 <img src="https://dwz.cn/tuxAxLey" alt="ReactCalendar">
                             </div>
@@ -98,7 +130,7 @@
                             </div>
                         </article>
                         <article>
-                            <h3>轮播</h3>
+                            <h3>二、轮播</h3>
                             <div class="img-container">
                                 <img src="https://dwz.cn/5TEf1Y8i" alt="Loop">
                             </div>
@@ -117,7 +149,7 @@
                             </div>
                         </article>
                         <article>
-                            <h3>可爱佩奇</h3>
+                            <h3>三、可爱佩奇</h3>
                             <div class="img-container">
                                 <img src="https://dwz.cn/DXEeAkEn" alt="CSS_Pig">
                             </div>
@@ -133,7 +165,7 @@
                             </div>
                         </article>
                         <article>
-                            <h3>在线画板</h3>
+                            <h3>四、在线画板</h3>
                             <div class="img-container">
                                 <img src="https://dwz.cn/IchfwU8A" alt="Drawing">
                             </div>
@@ -154,7 +186,7 @@
         </div>
     </div>
     <script src="https://cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./vendar/particle/particle.js"></script>
+    <script id="particle" src="./vendar/particle/particle.js"></script>
 </body>
 
 </html>

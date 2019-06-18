@@ -86,6 +86,12 @@ main {
       height: 5px;
       padding: 0 10px;
       -webkit-appearance: none; }
+    main .personal .habits .habitContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; }
+      main .personal .habits .habitContainer span {
+        width: 45%; }
     main .personal .personalNav {
       background: #69f;
       height: 40px;
@@ -158,6 +164,10 @@ main {
       .resumenContainer main .personal .mess {
         display: block;
         text-align: center; }
+        .resumenContainer main .personal .mess h1 {
+          font-size: 24px;
+          font-family: "Brush Script Std", cursive;
+          font-weight: bold; }
       .resumenContainer main .personal .imgContainer {
         text-align: center; }
         .resumenContainer main .personal .imgContainer img {

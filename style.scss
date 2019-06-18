@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #abcdef;
 }
+
 a {
     text-decoration: none;
     color: #66f;
@@ -96,7 +97,8 @@ main {
         div {
             padding: 0 0 10px 0;
         }
-        .mess{
+
+        .mess {
             display: none;
         }
 
@@ -121,6 +123,18 @@ main {
                 height: 5px;
                 padding: 0 10px;
                 -webkit-appearance: none;
+            }
+        }
+
+        .habits {
+            .habitContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                span {
+                    width: 45%;
+                }
             }
         }
 
@@ -183,7 +197,7 @@ main {
                     margin: 0 auto;
                 }
             }
-            
+
             p {
                 line-height: 20px;
                 margin: 0;
@@ -206,27 +220,39 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-    .resumenContainer{
+    .resumenContainer {
         width: 100vw;
-        margin:0;
+        margin: 0;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .resumenContainer{
-        header{
+    .resumenContainer {
+        header {
             display: none;
         }
-        main{
+
+        main {
             display: block;
-            .personal{
-                width:100vw;
+
+            .personal {
+                width: 100vw;
                 margin: 0 auto;
-                .mess{
+
+                .mess {
                     display: block;
                     text-align: center;
+
+                    h1 {
+                        font-size: 24px;
+                        font-family: "Brush Script Std", cursive;
+                        font-weight: bold;
+                    }
                 }
+
                 .imgContainer {
                     text-align: center;
+
                     img {
                         margin: 0;
                         width: 200px;
@@ -234,7 +260,7 @@ main {
                         border-radius: 50%;
                     }
                 }
-   
+
             }
         }
     }
