@@ -29,7 +29,7 @@ br {
   background-color: #66f;
   border-radius: 3px; }
 
-.resumenContainer {
+.resumeContainer {
   display: flex;
   position: absolute;
   width: 70vw;
@@ -39,7 +39,7 @@ br {
   justify-content: center;
   flex-flow: column wrap;
   box-shadow: 0 12px 2px 1px #2a3a4a; }
-  .resumenContainer footer {
+  .resumeContainer footer {
     height: 20px;
     background: #2a3a4a; }
 
@@ -149,29 +149,36 @@ main {
         background: #bbb; }
 
 @media screen and (max-width: 1024px) {
-  .resumenContainer {
+  .container {
+    display: none; }
+  .resumeContainer {
+    position: static;
     width: 100vw;
     margin: 0; } }
 
-@media screen and (max-width: 768px) {
-  .resumenContainer header {
+@media screen and (max-width: 660px) {
+  .container {
     display: none; }
-  .resumenContainer main {
-    display: block; }
-    .resumenContainer main .personal {
-      width: 100vw;
-      margin: 0 auto; }
-      .resumenContainer main .personal .mess {
-        display: block;
-        text-align: center; }
-        .resumenContainer main .personal .mess h1 {
-          font-size: 24px;
-          font-family: "Brush Script Std", cursive;
-          font-weight: bold; }
-      .resumenContainer main .personal .imgContainer {
-        text-align: center; }
-        .resumenContainer main .personal .imgContainer img {
-          margin: 0;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%; } }
+  .resumeContainer {
+    position: static; }
+    .resumeContainer header {
+      display: none; }
+    .resumeContainer main {
+      display: block; }
+      .resumeContainer main .personal {
+        width: 100vw;
+        margin: 0 auto; }
+        .resumeContainer main .personal .mess {
+          display: block;
+          text-align: center; }
+          .resumeContainer main .personal .mess h1 {
+            font-size: 24px;
+            font-family: "Brush Script Std", cursive;
+            font-weight: bold; }
+        .resumeContainer main .personal .imgContainer {
+          text-align: center; }
+          .resumeContainer main .personal .imgContainer img {
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; } }

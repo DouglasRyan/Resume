@@ -39,7 +39,7 @@ br {
 
 }
 
-.resumenContainer {
+.resumeContainer {
     display: flex;
     position: absolute;
     width: 70vw;
@@ -220,14 +220,25 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-    .resumenContainer {
+    .container {
+        display: none;
+    }
+
+    .resumeContainer {
+        position: static;
         width: 100vw;
         margin: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .resumenContainer {
+@media screen and (max-width: 660px) {
+    .container {
+        display: none;
+    }
+
+    .resumeContainer {
+        position: static;
+
         header {
             display: none;
         }
