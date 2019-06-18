@@ -163,16 +163,36 @@ main {
         padding-left: 30px;
         box-shadow: -1px 1px 0 1px #ddd;
 
+        .highLight {
+            color: #f66;
+            background: rgba(187, 187, 187, 0.5);
+        }
+
+        p {
+            line-height: 20px;
+            margin: 0;
+        }
+
+        .text {
+            margin: 15px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #69f;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        &>div {
+            margin-right: 30px;
+        }
+
         .project {
             color: #1a2a3a;
             margin-right: 30px;
 
-            h2 {
-                font-size: 24px;
-                color: #69f;
-                margin: 0;
-                margin-top: 20px;
-            }
+
 
             h3 {
                 font-size: 16px;
@@ -198,23 +218,15 @@ main {
                 }
             }
 
-            p {
-                line-height: 20px;
-                margin: 0;
-            }
-
-            .text {
-                margin: 15px 0;
-            }
-
             .boldTitle {
                 font-weight: bold;
             }
 
-            .highLight {
-                color: #f66;
-                background: #bbb;
-            }
+
+        }
+
+        .selfExperience {
+            font-weight: 400;
         }
     }
 }
