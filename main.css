@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+br {
+  width: 0;
+  height: 0; }
+
 .icon {
   width: 1.2em;
   height: 1.2em;
@@ -25,6 +29,9 @@
   margin: 0 10vw;
   justify-content: center;
   flex-flow: column wrap; }
+  .resumenContainer footer {
+    height: 20px;
+    background: #2a3a4a; }
 
 header {
   display: flex;
@@ -92,9 +99,13 @@ main {
         color: #69f; }
       main .detail .project h3 {
         color: #4a5a6a;
-        font-weight: bold; }
+        font-weight: bold;
+        margin: 0; }
       main .detail .project p {
-        line-height: 20px; }
+        line-height: 20px;
+        margin: 0; }
+      main .detail .project .text {
+        margin: 15px 0; }
       main .detail .project .boldTitle {
         font-weight: bold; }
       main .detail .project .highLight {
