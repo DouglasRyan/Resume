@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: #66f; }
+  a:hover {
+    color: #f66; }
+
 br {
   width: 0;
   height: 0; }
@@ -23,12 +29,13 @@ br {
 .resumenContainer {
   display: flex;
   position: absolute;
-  width: 80vw;
+  width: 70vw;
+  margin: 0 15vw;
   background: #cafedb;
   opacity: 0.9;
-  margin: 0 10vw;
   justify-content: center;
-  flex-flow: column wrap; }
+  flex-flow: column wrap;
+  box-shadow: 0 12px 2px 1px #2a3a4a; }
   .resumenContainer footer {
     height: 20px;
     background: #2a3a4a; }
@@ -92,15 +99,33 @@ main {
       margin: 15px 0 5px 10px; }
   main .detail {
     padding-left: 30px;
-    border-left: 2px solid #bbb; }
+    box-shadow: -1px 1px 0 1px #ddd; }
     main .detail .project {
-      color: #1a2a3a; }
+      color: #1a2a3a;
+      margin-right: 30px; }
       main .detail .project h2 {
-        color: #69f; }
+        font-size: 24px;
+        color: #69f;
+        margin: 0;
+        margin-top: 20px; }
       main .detail .project h3 {
+        font-size: 16px;
         color: #4a5a6a;
         font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
         margin: 0; }
+      main .detail .project .img-container {
+        height: 210px;
+        line-height: 210px;
+        border: 1px dashed #4a5a6a;
+        border-radius: 20px; }
+        main .detail .project .img-container img {
+          height: 200px;
+          line-height: 200px;
+          padding-top: 10px;
+          display: block;
+          margin: 0 auto; }
       main .detail .project p {
         line-height: 20px;
         margin: 0; }
