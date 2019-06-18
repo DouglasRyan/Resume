@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body{
+    background: #abcdef;
+}
 a {
     text-decoration: none;
     color: #66f;
@@ -93,6 +96,9 @@ main {
         div {
             padding: 0 0 10px 0;
         }
+        .mess{
+            display: none;
+        }
 
         .imgContainer {
             img {
@@ -177,7 +183,7 @@ main {
                     margin: 0 auto;
                 }
             }
-
+            
             p {
                 line-height: 20px;
                 margin: 0;
@@ -194,6 +200,41 @@ main {
             .highLight {
                 color: #f66;
                 background: #bbb;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .resumenContainer{
+        width: 100vw;
+        margin:0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .resumenContainer{
+        header{
+            display: none;
+        }
+        main{
+            display: block;
+            .personal{
+                width:100vw;
+                margin: 0 auto;
+                .mess{
+                    display: block;
+                    text-align: center;
+                }
+                .imgContainer {
+                    text-align: center;
+                    img {
+                        margin: 0;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                    }
+                }
+   
             }
         }
     }

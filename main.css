@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  background: #abcdef; }
+
 a {
   text-decoration: none;
   color: #66f; }
@@ -69,6 +72,8 @@ main {
     margin: 0 15px; }
     main .personal div {
       padding: 0 0 10px 0; }
+    main .personal .mess {
+      display: none; }
     main .personal .imgContainer img {
       margin-top: -100px;
       width: 200px;
@@ -136,3 +141,27 @@ main {
       main .detail .project .highLight {
         color: #f66;
         background: #bbb; }
+
+@media screen and (max-width: 1024px) {
+  .resumenContainer {
+    width: 100vw;
+    margin: 0; } }
+
+@media screen and (max-width: 768px) {
+  .resumenContainer header {
+    display: none; }
+  .resumenContainer main {
+    display: block; }
+    .resumenContainer main .personal {
+      width: 100vw;
+      margin: 0 auto; }
+      .resumenContainer main .personal .mess {
+        display: block;
+        text-align: center; }
+      .resumenContainer main .personal .imgContainer {
+        text-align: center; }
+        .resumenContainer main .personal .imgContainer img {
+          margin: 0;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%; } }
